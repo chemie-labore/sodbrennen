@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Station 2 · pH-Wert bei der Verdauung</title>
+<meta name="description" content="Versuchsanimation mit Magnesiumhydroxid, salzsaurer Lösung und pH-Papier. Starten, beobachten und stoppen.">
+<style>*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#e9ece6;color:#25342e;font-family:Inter,Arial,sans-serif}body{padding:24px 32px 14px}.labor{max-width:1280px;margin:auto}.header{display:flex;align-items:center;justify-content:space-between;gap:24px;margin-bottom:22px}.eyebrow{font-size:10px;letter-spacing:2.2px;font-weight:700;color:#63746b}h1{font:normal clamp(24px,3vw,36px)/1.15 Georgia,serif;margin:8px 0 0;letter-spacing:-.7px}.substance{font-size:12px;border:1px solid #cdd6ca;border-radius:100px;padding:10px 16px;white-space:nowrap;background:#eff3e9;color:#526948}.experiment{background:#fafbf7;border-radius:18px;overflow:hidden;border:1px solid #d5dcd2;box-shadow:0 14px 40px #273c2d09}.scene-heading{height:43px;border-bottom:1px solid #dfe4da;display:flex;align-items:center;justify-content:space-between;padding:0 22px;color:#637268;font-size:11px}.scene-heading span:first-child{display:flex;gap:8px;align-items:center;font-weight:600;color:#40554a}.scene-heading i{height:6px;width:6px;background:#7a8b61;border-radius:50%}.scene-frame{width:100%;height:min(61vh,640px);min-height:300px;overflow:hidden;background:#f0f2ed}.scene-frame>svg{display:block;width:100%;height:100%;user-select:none;pointer-events:none}.caption{min-height:48px;display:flex;align-items:center;gap:11px;padding:7px 22px;border-top:1px solid #dce2d9;background:#fbfcf9}.caption p{margin:0;font-size:13px;line-height:1.5}.phase-dot{width:6px;height:6px;flex-shrink:0;background:#a1aaa0;border-radius:50%}.phase-dot.running{background:#75884a;box-shadow:0 0 0 4px #75884a18}#clock{margin-left:auto;font-size:12px;letter-spacing:.8px;font-variant-numeric:tabular-nums;color:#7d897f;padding-left:12px}.progress{height:3px;background:#e2e7dc}.progress span{display:block;background:#778e5a;height:100%;width:0}.controlbar{display:flex;align-items:center;gap:22px;padding:18px 0 9px}.controls{display:flex;gap:10px}button{border:1px solid #b8c4b5;border-radius:10px;background:#f6f8f2;padding:13px 24px;min-width:120px;min-height:49px;display:flex;gap:9px;justify-content:center;align-items:center;font:600 14px Inter,Arial,sans-serif;color:#2d4435;cursor:pointer;touch-action:manipulation}button svg{width:16px;height:16px;fill:currentColor}button#start{background:#294b3c;border-color:#294b3c;color:white}button:hover:enabled{filter:brightness(1.09)}button:focus-visible{outline:3px solid #ab7136;outline-offset:3px}button:disabled{opacity:.37;cursor:default}#playback-note{font-size:12px;color:#647467;line-height:1.5;margin:0}.model-note{font-size:10px;line-height:1.6;color:#7c857b;margin:6px 0 0;max-width:1000px}.scene-frame svg text{font-family:Inter,Arial,sans-serif}@media(max-height:760px) and (min-width:760px){body{padding-top:14px}.header{margin-bottom:14px}h1{font-size:28px}.scene-frame{height:59vh;min-height:260px}.controlbar{padding-top:11px}.model-note{margin-top:2px}}@media(max-width:760px){body{padding:18px 14px}.header{gap:12px;margin-bottom:16px}.substance{font-size:10px;padding:8px 10px}h1{font-size:26px}.scene-heading{padding:0 14px;font-size:10px}.scene-frame{height:55vh;min-height:330px}.caption{padding:8px 14px}.caption p{font-size:12px}.controlbar{gap:12px;align-items:flex-start;flex-wrap:wrap}.controls{width:100%}.controls button{flex:1}.model-note{font-size:10px}}@media(min-width:760px) and (max-width:960px) and (min-height:1000px){.scene-frame{height:58vh}.header{align-items:flex-start}h1{font-size:30px}}
+</style>
+</head>
+<body>
+<main class="labor">
+ <header class="header"><div class="title"><span class="eyebrow">CHEMIE · STATION 02</span><h1>pH-Wert bei der Verdauung</h1></div><span class="substance">Magnesiumhydroxid</span></header>
+ <section class="experiment" aria-label="Versuchsanimation">
+  <div class="scene-heading"><span><i></i> Versuchsansicht</span><span>3 ml Lösung · 4 Spatelzugaben</span></div>
+  <div class="scene-frame" id="scene-frame"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 640" role="img" aria-labelledby="scene-title scene-desc">
+<title id="scene-title">Versuchsaufbau: salzsaure Lösung und Magnesiumhydroxid</title>
+<desc id="scene-desc">Reagenzglas im Metallständer, salzsaure Lösung, Tablettenpulver, Pipette, Spatel und zwei kurze Streifen pH-Papier.</desc>
+<defs>
+ <linearGradient id="bench" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f4f3ed"/><stop offset=".65" stop-color="#eeece2"/><stop offset="1" stop-color="#d8d5ca"/></linearGradient>
+ <radialGradient id="light" cx=".38" cy=".05" r=".9"><stop stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></radialGradient>
+ <linearGradient id="glass" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8cabae" stop-opacity=".38"/><stop offset=".08" stop-color="#fff" stop-opacity=".9"/><stop offset=".19" stop-color="#d8e8e6" stop-opacity=".1"/><stop offset=".55" stop-color="#fff" stop-opacity=".16"/><stop offset=".84" stop-color="#bfd5d4" stop-opacity=".2"/><stop offset=".95" stop-color="#738f92" stop-opacity=".45"/><stop offset="1" stop-color="#fff" stop-opacity=".75"/></linearGradient>
+ <linearGradient id="glass-neck" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#899f9c" stop-opacity=".45"/><stop offset=".25" stop-color="#fff" stop-opacity=".92"/><stop offset=".55" stop-color="#eff7f3" stop-opacity=".2"/><stop offset="1" stop-color="#718f8c" stop-opacity=".5"/></linearGradient>
+ <linearGradient id="water" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#95b8bb" stop-opacity=".38"/><stop offset=".25" stop-color="#d6e7e5" stop-opacity=".4"/><stop offset=".72" stop-color="#eaf2ea" stop-opacity=".3"/><stop offset="1" stop-color="#7a9f9f" stop-opacity=".5"/></linearGradient>
+ <linearGradient id="steel" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#626e70"/><stop offset=".14" stop-color="#c3c9c7"/><stop offset=".31" stop-color="#fafcf6"/><stop offset=".47" stop-color="#b6c0be"/><stop offset=".78" stop-color="#788588"/><stop offset=".93" stop-color="#d4dcda"/><stop offset="1" stop-color="#6f7c7e"/></linearGradient>
+ <linearGradient id="steel-flat" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f8fbf6"/><stop offset=".18" stop-color="#d7dcda"/><stop offset=".45" stop-color="#8b9899"/><stop offset=".61" stop-color="#edf2ed"/><stop offset="1" stop-color="#64777a"/></linearGradient>
+ <linearGradient id="porcelain" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fffefa"/><stop offset=".5" stop-color="#e8e6dd"/><stop offset=".76" stop-color="#bebdb2"/><stop offset="1" stop-color="#f9faf4"/></linearGradient>
+ <radialGradient id="dish-inside" cx=".45" cy=".37" r=".6"><stop stop-color="#dcdad0"/><stop offset=".75" stop-color="#f4f1e6"/><stop offset="1" stop-color="#fffef7"/></radialGradient>
+ <linearGradient id="paper" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#bfa974"/><stop offset=".25" stop-color="#e4d4a5"/><stop offset="1" stop-color="#d5c596"/></linearGradient>
+ <linearGradient id="blue-bulb" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#274751"/><stop offset=".28" stop-color="#729ba1"/><stop offset=".52" stop-color="#4f7f89"/><stop offset="1" stop-color="#203d48"/></linearGradient>
+ <radialGradient id="powder" cx=".3" cy=".2" r=".9"><stop stop-color="#fffefb"/><stop offset=".68" stop-color="#eeece3"/><stop offset="1" stop-color="#c2c4b7"/></radialGradient>
+ <filter id="soft-shadow" x="-50%" y="-100%" width="200%" height="300%"><feGaussianBlur stdDeviation="8"/></filter>
+ <filter id="small-shadow" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="2"/></filter>
+ <filter id="cloud-blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3"/></filter>
+ <clipPath id="tube-clip"><path d="M556 190H604V502A24 24 0 0 1 556 502Z"/></clipPath>
+ <clipPath id="bottle-clip"><path d="M213 347H247V363C247 377 279 379 279 399V502Q279 514 266 516H194Q181 514 181 502V399C181 379 213 377 213 363Z"/></clipPath>
+ <symbol id="pipette-symbol" overflow="visible">
+  <path d="M-8-302V-30L-2 0Q0 3 2 0L8-30V-302Z" fill="url(#glass-neck)" stroke="#799997" stroke-width="1.1"/>
+  <rect id="pipette-liquid" x="-3" y="-102" width="6" height="90" rx="2" fill="#a5c7c5" opacity="0"/>
+  <path d="M-5-297V-32L-1-10" fill="none" stroke="#fff" stroke-opacity=".92" stroke-width="2"/>
+  <g fill="none" stroke="#546c69" stroke-width=".7"><path d="M1-42H7M4-48H7M4-54H7M4-60H7M4-66H7M1-72H7M4-78H7M4-84H7M4-90H7M4-96H7M1-102H7"/></g>
+  <g fill="#4e6664" font-family="Arial,sans-serif" font-size="5.5"><text x="-5" y="-41">1</text><text x="-5" y="-71">2</text><text x="-5" y="-101">3</text></g>
+  <g transform="translate(0 -195)"><path d="M-7-107V-112C-7-116-13-117-13-126V-133Q-13-144 0-145Q13-144 13-133V-126C13-117 7-116 7-112V-107Z" fill="url(#blue-bulb)" stroke="#284953" stroke-width="1.2"/>
+  <path d="M-7-128Q-9-138 0-140" fill="none" stroke="#a9cbd0" stroke-opacity=".7" stroke-width="2.5" stroke-linecap="round"/>
+  <ellipse cx="0" cy="-110" rx="8" ry="2" fill="#426975"/></g>
+ </symbol>
+ <symbol id="spatula-symbol" overflow="visible">
+  <path d="M12-4L169-5Q182-5 185 0Q182 5 169 5L12 4Z" fill="url(#steel-flat)" stroke="#7b8b89" stroke-width=".8"/>
+  <path d="M13-6C-1-12-25-9-28-1C-28 9-3 14 13 6Z" fill="url(#steel-flat)" stroke="#7b8b89" stroke-width="1"/>
+  <path d="M-23-2Q-7 3 10 1M23-3H168" stroke="#fff" stroke-opacity=".85" fill="none"/>
+  <path d="M-20 3Q-7 9 6 5" fill="none" stroke="#667778" stroke-opacity=".6"/>
+  <g id="spatula-powder" opacity="0"><path d="M-23-1L-18-5L-12-4L-8-9L-2-7L3-8L11-2Q0 5-23-1Z" fill="url(#powder)" stroke="#e9e9dc" stroke-width=".5"/><circle cx="-10" cy="-3" r=".7" fill="#c3c8b8"/></g>
+ </symbol>
+</defs>
+<!-- Laboratory bench -->
+<rect width="1200" height="640" rx="14" fill="url(#bench)"/>
+<rect width="1200" height="640" rx="14" fill="url(#light)"/>
+<path d="M0 548C320 550 839 541 1200 552" fill="none" stroke="#b8b8ab" stroke-opacity=".35"/>
+<path d="M12 566L1193 572M36 622L1160 627" stroke="#fff" stroke-opacity=".22"/>
+<ellipse cx="577" cy="548" rx="147" ry="18" fill="#535d51" opacity=".2" filter="url(#soft-shadow)"/>
+<ellipse cx="230" cy="524" rx="75" ry="12" fill="#566351" opacity=".17" filter="url(#soft-shadow)"/>
+<ellipse cx="909" cy="521" rx="105" ry="12" fill="#566351" opacity=".2" filter="url(#soft-shadow)"/>
+<!-- Two short pH-paper specimens, on ceramic tiles -->
+<g font-family="Arial,sans-serif" fill="#56665d">
+ <text x="45" y="171" font-size="11" letter-spacing="2">pH-PAPIER</text>
+ <rect x="59" y="211" width="107" height="112" rx="7" fill="#757f71" opacity=".16" filter="url(#small-shadow)"/>
+ <rect x="199" y="211" width="107" height="112" rx="7" fill="#757f71" opacity=".16" filter="url(#small-shadow)"/>
+ <rect x="56" y="207" width="107" height="112" rx="7" fill="url(#porcelain)" stroke="#d6d8ca"/>
+ <rect x="196" y="207" width="107" height="112" rx="7" fill="url(#porcelain)" stroke="#d6d8ca"/>
+ <path d="M62 213H155M202 213H295" stroke="#fff" stroke-width="2" opacity=".85"/>
+ <text x="111" y="195" text-anchor="middle" font-size="13">vorher</text><text x="251" y="195" text-anchor="middle" font-size="13">nachher</text>
+ <rect x="104" y="232" width="20" height="70" fill="#77755c" opacity=".13" filter="url(#small-shadow)"/>
+ <path d="M102 230L122 231L121 301L102 300Z" fill="url(#paper)" stroke="#b7ab8a" stroke-width=".5"/>
+ <path d="M242 230L262 231L261 301L242 300Z" fill="url(#paper)" stroke="#b7ab8a" stroke-width=".5"/>
+ <rect id="paper-before-wet" x="102" y="258" width="20" height="42" rx="1" fill="#c74633" opacity="0"/>
+ <rect id="paper-after-wet" x="242" y="258" width="20" height="42" rx="1" fill="#317e8c" opacity="0"/>
+ <path d="M105 233V296M245 233V296" stroke="#fff" stroke-opacity=".2"/>
+</g>
+<!-- Clear reagent bottle -->
+<g id="acid-bottle">
+ <g clip-path="url(#bottle-clip)"><rect x="180" y="424" width="100" height="100" fill="url(#water)"/><ellipse cx="230" cy="424" rx="49" ry="7" fill="#e9f2e9" fill-opacity=".75" stroke="#88aaa7" stroke-opacity=".45"/></g>
+ <path d="M213 347H247V363C247 377 279 379 279 399V502Q279 514 266 516H194Q181 514 181 502V399C181 379 213 377 213 363Z" fill="url(#glass)" stroke="#9fb3ad" stroke-width="1.4"/>
+ <path d="M188 404V495Q188 507 198 508M218 351V368Q217 378 202 385" fill="none" stroke="#fff" stroke-opacity=".85" stroke-width="4" stroke-linecap="round"/>
+ <rect x="210" y="339" width="40" height="16" rx="3" fill="url(#glass-neck)" stroke="#8fa6a0"/>
+ <ellipse cx="230" cy="340" rx="20" ry="4" fill="#9bb0a7" stroke="#e6eee3" stroke-width="1.2"/>
+ <ellipse cx="230" cy="340" rx="14" ry="2.5" fill="#637f7b" fill-opacity=".4"/>
+ <rect x="190" y="439" width="80" height="55" rx="2" fill="#f8f7ee" stroke="#d4d7c8" stroke-width=".7"/>
+ <path d="M194 446H266" stroke="#87988b" stroke-width="2"/>
+ <text x="230" y="463" text-anchor="middle" fill="#465d52" font-size="11" font-family="Arial,sans-serif">Salzsaure</text><text x="230" y="478" text-anchor="middle" fill="#465d52" font-size="11" font-family="Arial,sans-serif">Lösung</text>
+ <path d="M197 501H263" stroke="#eff8ee" stroke-opacity=".9"/>
+</g>
+<!-- Paper dispenser -->
+<g id="ph-dispenser" transform="translate(91 479)">
+ <ellipse cx="0" cy="28" rx="43" ry="12" fill="#5b675b" opacity=".15" filter="url(#small-shadow)"/>
+ <path d="M-39-3V21C-39 38 39 38 39 21V-3Z" fill="url(#porcelain)" stroke="#b9beb0"/>
+ <ellipse cx="0" cy="-3" rx="39" ry="23" fill="#e8e7dc" stroke="#b9beb0"/>
+ <ellipse cx="0" cy="-3" rx="30" ry="17" fill="url(#paper)" stroke="#b2aa85"/>
+ <ellipse cx="0" cy="-3" rx="10" ry="6" fill="#f1f0e8" stroke="#aaa990"/>
+ <path d="M27 3L55 11L49 27L30 19Z" fill="url(#paper)" stroke="#b7ab8a" stroke-width=".5"/>
+ <text x="0" y="21" text-anchor="middle" fill="#64745e" font-family="Arial,sans-serif" font-size="9">pH-Papier</text>
+</g>
+<!-- Stable metal rack, behind the transparent tube -->
+<g id="tube-rack">
+ <g transform="translate(0 -21)"><path d="M477 551L642 551L681 573L488 578L463 567Z" fill="url(#steel-flat)" stroke="#849291" stroke-width="1.2"/>
+ <path d="M463 567L488 578L681 573V581L488 585L463 574Z" fill="#708183" stroke="#65787b"/></g>
+ <rect x="493" y="319" width="13" height="218" rx="4" fill="url(#steel)" stroke="#879393" stroke-width=".7"/>
+ <rect x="643" y="319" width="13" height="218" rx="4" fill="url(#steel)" stroke="#879393" stroke-width=".7"/>
+ <path d="M486 321L639 317L667 330L505 335Z" fill="#e1e7df" stroke="#9aa8a1"/>
+ <path d="M505 335L667 330V340L505 346Z" fill="url(#steel-flat)" stroke="#7c8f8d"/>
+ <ellipse cx="580" cy="326" rx="38" ry="9" fill="#728582"/>
+ <ellipse cx="580" cy="326" rx="32" ry="7" fill="#dbe2d7" stroke="#526967"/>
+ <path transform="translate(0 -21)" d="M490 553L508 558M640 552L660 560" stroke="#edf6ee" stroke-width="1.5"/>
+ <circle cx="499" cy="340" r="3" fill="#63797a"/><path d="M497 338L501 342" stroke="#e5ebe7"/>
+ <circle cx="650" cy="336" r="3" fill="#63797a"/><path d="M648 334L652 338" stroke="#e5ebe7"/>
+</g>
+<!-- Test tube: 3 mL working volume occupies the lower section -->
+<path id="tube-back" d="M550 184H610V500A30 30 0 0 1 550 500Z" fill="url(#glass)" stroke="#91aaa5" stroke-opacity=".65" stroke-width="1.6"/>
+<g id="tube-liquid" clip-path="url(#tube-clip)">
+ <rect id="tube-liquid-body" x="555" y="430" width="50" height="100" fill="url(#water)" opacity="0"/>
+ <ellipse id="tube-meniscus" cx="580" cy="430" rx="24" ry="4" fill="#e2efea" fill-opacity=".7" stroke="#8da9a5" stroke-width=".8" opacity="0"/>
+ <g id="tube-cloud" opacity="0" filter="url(#cloud-blur)" fill="#fffef4">
+  <path d="M574 432C568 446 591 455 574 469C559 482 580 488 573 508L601 518L597 448Z" opacity=".7"/>
+  <ellipse cx="587" cy="494" rx="25" ry="20" opacity=".7"/>
+  <ellipse cx="571" cy="476" rx="12" ry="18" opacity=".55"/>
+ </g>
+ <path id="tube-sediment" d="M557 513Q566 515 577 512Q587 515 603 513V528H557Z" fill="url(#powder)" opacity="0"/>
+ <g id="tube-interior"/>
+</g>
+<g id="tube-shine" pointer-events="none">
+ <path d="M556 197V497Q556 519 579 522" fill="none" stroke="#fff" stroke-opacity=".82" stroke-width="3.2" stroke-linecap="round"/>
+ <path d="M601 198V497Q601 516 589 521" fill="none" stroke="#799c98" stroke-opacity=".25" stroke-width="2"/>
+ <path d="M562 201V376" stroke="#fff" stroke-opacity=".45" stroke-width="1.7"/>
+ <ellipse cx="580" cy="184" rx="31" ry="7" fill="#e3ece4" fill-opacity=".5" stroke="#9bb2aa" stroke-width="1.6"/>
+ <ellipse cx="580" cy="184" rx="25" ry="4" fill="#a5bbb0" fill-opacity=".21" stroke="#fff" stroke-opacity=".85"/>
+ <path d="M551 183Q580 174 609 183" stroke="#fff" stroke-width="1.4" fill="none" opacity=".9"/>
+</g>
+<!-- Powder in a small porcelain dish -->
+<g id="powder-dish">
+ <path d="M825 492Q830 523 910 527Q990 523 995 492Z" fill="url(#porcelain)" stroke="#bfc5b5"/>
+ <ellipse cx="910" cy="492" rx="85" ry="28" fill="url(#porcelain)" stroke="#d1d2c7"/>
+ <ellipse cx="910" cy="490" rx="72" ry="22" fill="url(#dish-inside)" stroke="#e4e5d8"/>
+ <path d="M859 498L867 492L874 495L884 483L894 486L903 477L914 483L922 480L936 490L945 488L961 501Q910 517 859 498Z" fill="url(#powder)" stroke="#e3e3d6" stroke-width=".7"/>
+ <g fill="#fffef8" opacity=".93"><ellipse cx="880" cy="493" rx="4" ry="1.7"/><ellipse cx="901" cy="487" rx="5" ry="2"/><ellipse cx="920" cy="494" rx="4" ry="2"/><ellipse cx="941" cy="500" rx="3.2" ry="1.5"/></g>
+ <g fill="#c6cbbf" opacity=".55"><circle cx="887" cy="498" r=".8"/><circle cx="909" cy="496" r=".7"/><circle cx="929" cy="500" r="1"/><circle cx="913" cy="485" r=".65"/><circle cx="897" cy="504" r=".7"/><circle cx="944" cy="496" r=".8"/></g>
+ <path d="M833 491Q842 469 909 467" fill="none" stroke="#fff" stroke-width="2.5" opacity=".9"/>
+ <text x="910" y="560" text-anchor="middle" fill="#435d50" font-size="14" font-family="Arial,sans-serif">Tablettenpulver</text>
+ <text x="910" y="580" text-anchor="middle" fill="#7b887a" font-size="11" font-family="Arial,sans-serif">Magnesiumhydroxid</text>
+</g>
+<!-- Movable instruments: all motion is controlled by the parent animation. -->
+<g id="spatula" transform="translate(894 414) rotate(-9)"><use href="#spatula-symbol" xlink:href="#spatula-symbol"/></g>
+<g id="pipette" transform="translate(370 507) rotate(-25)"><use href="#pipette-symbol" xlink:href="#pipette-symbol"/></g>
+</svg>
+</div>
+  <div class="caption"><span class="phase-dot" id="phase-dot"></span><p id="phase" aria-live="polite">Der Versuch ist vorbereitet.</p><span id="clock" aria-label="Animationszeit">00:00</span></div>
+  <div class="progress" role="progressbar" aria-label="Fortschritt der Animation" aria-valuemin="0" aria-valuemax="78" aria-valuenow="0" id="progress"><span id="progress-fill"></span></div>
+ </section>
+ <footer class="controlbar"><div class="controls"><button id="start" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>Start</button><button id="stop" type="button" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7h10v10H7z"/></svg>Stopp</button></div><p id="playback-note">Mit Start beginnt die Animation. Stopp hält das Bild an.</p></footer>
+ <p class="model-note">Qualitative Modellanimation: Magnesiumhydroxid im Überschuss. Papierfarben und Zeitablauf sind exemplarisch; der tatsächliche End-pH hängt vom Ansatz ab.</p>
+</main>
+<script>(()=>{'use strict';
+ const $=id=>document.getElementById(id),NS='http://www.w3.org/2000/svg',TOTAL=78;
+ const start=$('start'),stop=$('stop'),note=$('playback-note'),phase=$('phase');
+ let elapsed=0,running=false,last=0,raf=0,lastPhase='';
+ const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v)),ease=v=>{v=clamp(v);return v*v*(3-2*v)},mix=(a,b,p)=>a+(b-a)*p;
+ const interval=(t,a,b)=>clamp((t-a)/(b-a));
+ function between(t,points){if(t<=points[0][0])return points[0].slice(1);for(let i=1;i<points.length;i++){if(t<=points[i][0]){let p=ease((t-points[i-1][0])/(points[i][0]-points[i-1][0]));return points[i].slice(1).map((v,j)=>mix(points[i-1][j+1],v,p));}}return points.at(-1).slice(1);}
+ function pose(id,p){$(id).setAttribute('transform',`translate(${p[0]} ${p[1]}) rotate(${p[2]||0})`);}
+ function group(id,parent){let g=document.createElementNS(NS,'g');g.id=id;parent.appendChild(g);return g;}
+ const scene=$('scene-frame').querySelector('svg');
+ const free=group('flying-material',scene),inside=group('suspended-powder',$('tube-interior'));
+ const cloud=$('tube-cloud');
+ const grains=Array.from({length:120},(_,i)=>({x:Math.sin(i*23.71)*19,r:.5+(i%6)*.19,shift:(Math.sin(i*84.4)+1)/2}));
+ function setFluid(t){let fill=interval(t,8,13),level=mix(524,430,fill);$('tube-liquid-body').setAttribute('y',level);$('tube-liquid-body').setAttribute('height',530-level);$('tube-liquid-body').setAttribute('opacity',fill?1:0);$('tube-meniscus').setAttribute('cy',level);$('tube-meniscus').setAttribute('opacity',fill?1:0);let amount=0;for(let k=0;k<4;k++)amount+=interval(t,32.4+k*7,34.8+k*7);cloud.setAttribute('opacity',Math.min(.48,amount*.12));$('tube-sediment').setAttribute('opacity',clamp((amount-1)/3)*.85);return level;}
+ const pipetteKeys=[
+ [0,440,525,-8],[1.5,230,300,0],[3,230,440,0],[4.1,230,440,0],[5.5,230,155,0],[7,580,155,0],[8,580,224,0],[13,580,224,0],[14,580,155,0],[15.5,440,525,-8],
+ [17,580,155,0],[18.2,580,468,0],[19.2,580,468,0],[20.3,580,155,0],[22,112,244,0],[23.3,112,244,0],[25,440,525,-8],
+ [60,440,525,-8],[61.7,580,155,0],[63,580,465,0],[64,580,465,0],[65.3,580,155,0],[67,252,244,0],[69,252,244,0],[71,440,525,-8],[78,440,525,-8]];
+ function pipetteVolume(t){if(t<8)return 3*interval(t,3,4.1);if(t<=13)return 3*(1-interval(t,8,13));if(t>=18.2&&t<23)return .12*interval(t,18.2,19.2)*(1-interval(t,22.3,22.8));if(t>=63&&t<69)return .12*interval(t,63,64)*(1-interval(t,67.5,68));return 0;}
+ const circle=(x,y,r,fill,opacity=1)=>`<circle cx="${x.toFixed(2)}" cy="${y.toFixed(2)}" r="${r}" fill="${fill}" opacity="${opacity}"/>`;
+ function draw(t){
+  let level=setFluid(t),drops='',powder='',inner='';const pipettePose=between(t,pipetteKeys);pose('pipette',pipettePose);const cameraTop=Math.min(0,pipettePose[1]-340*Math.cos((pipettePose[2]||0)*Math.PI/180)-20);scene.setAttribute('viewBox',`0 ${cameraTop} 1200 ${640-cameraTop}`);let vol=pipetteVolume(t),h=vol/3*90;
+  $('pipette-liquid').setAttribute('y',-12-h);$('pipette-liquid').setAttribute('height',h);$('pipette-liquid').setAttribute('opacity',vol>0?1:0);
+  if(t>=8&&t<13){for(let i=0;i<6;i++){let p=((t-8)*2.8+i/6)%1;drops+=`<ellipse cx="580" cy="${224+(level-224)*p*p}" rx="2" ry="${2.7+2*p}" fill="#88aeb4" opacity="${.65-.25*p}"/>`;}let ripple=(t*3)%1;drops+=`<ellipse cx="580" cy="${level}" rx="${4+16*ripple}" ry="${1+2*ripple}" fill="none" stroke="#c4d7d7" opacity="${(1-ripple)*.65}"/>`;}
+  const doseActive=t>=28&&t<56;let dose=Math.min(3,Math.floor((t-28)/7)),dt=t-(28+Math.max(0,dose)*7);
+  if(doseActive){let p=between(dt,[[0,910,488,-5],[.7,910,478,-5],[1.4,910,153,0],[2.6,580,153,0],[3.1,580,153,33],[3.65,580,153,33],[4.3,580,153,0],[5.5,910,153,0],[6.7,910,488,-5],[7,910,488,-5]]);pose('spatula',p);$('spatula-powder').setAttribute('opacity',dt>=.7&&dt<3.65?1-interval(dt,2.7,3.65):0);}else{pose('spatula',[910,488,-5]);$('spatula-powder').setAttribute('opacity',0);}
+  for(let k=0;k<4;k++){
+   let age=t-(30.7+k*7);
+   grains.slice(0,60).forEach((g,i)=>{let a=age-g.shift*.65;if(a>=0&&a<1.7){let p=a/1.7,y=153+(level-153)*p*p;powder+=circle(580+g.x*.65+Math.sin(a*3+i)*1.5,y,g.r,'#faf9ed',1);}else if(a>=1.7&&a<7){let p=clamp((a-1.7)/5.3),y=mix(level+3,519,p);inner+=circle(580+g.x+Math.sin(a+i)*2,y,g.r*.8,'#fffef5',(1-p)*(.65+k*.08));}});
+  }
+  if(t>33){let count=Math.min(60,Math.floor((t-33)*1.6));for(let i=0;i<count;i++){let g=grains[i],y=439+(g.shift*77+Math.max(0,t-53)*.7)%77;inner+=circle(580+g.x,y,g.r*.6,'#fffdf2',.26);}}
+  for(let [a,x]of [[22.3,112],[67.5,252]]){if(t>=a&&t<a+.5){let p=(t-a)/.5;drops+=`<ellipse cx="${x}" cy="${244+38*p*p}" rx="2.8" ry="${3.4+2*p}" fill="#b3cbd0" opacity=".9"/>`;}}
+  free.innerHTML=drops+powder;inside.innerHTML=inner;
+  // Only the pH paper changes colour. The displayed result is an explicit qualitative model with excess Mg(OH)2.
+  for(let [id,a,color]of [['paper-before-wet',22.8,'#c34629'],['paper-after-wet',68,'#427c99']]){let p=interval(t,a,a+1.3),e=$(id);e.setAttribute('fill',color);e.setAttribute('opacity',p*.94);e.setAttribute('height',40*p);e.setAttribute('y',300-40*p);}
+  const phases=t<2?'Die Pipette wird vorbereitet.':t<5?'3 ml salzsaure Lösung werden aufgenommen.':t<15.5?'Die Lösung wird in das Reagenzglas gegeben.':t<20.3?'Eine kleine Probe wird aus dem Reagenzglas entnommen.':t<22.8?'Eine kleine Probe wird auf das erste Stück pH-Papier getropft.':t<28?'Erste pH-Prüfung.':t<56?`Tablettenpulver wird zugegeben · Spatel ${Math.min(4,Math.floor((t-28)/7)+1)} von 4.`:t<60?'Das Pulver verteilt sich in der Lösung.':t<65.3?'Eine kleine Probe wird aus dem Reagenzglas entnommen.':t<68?'Eine kleine Probe wird auf das zweite Stück pH-Papier getropft.':t<74?'Zweite pH-Prüfung.':'Der Versuch ist beendet. Vergleiche die beiden Papierstücke.';
+  let text=t===0?'Der Versuch ist vorbereitet.':phases;if(text!==lastPhase){phase.textContent=text;lastPhase=text;}
+  $('clock').textContent=`${String(Math.floor(t/60)).padStart(2,'0')}:${String(Math.floor(t%60)).padStart(2,'0')}`;$('progress-fill').style.width=t/TOTAL*100+'%';$('progress').setAttribute('aria-valuenow',Math.floor(t));
+ }
+ function sync(){start.disabled=running;stop.disabled=!running;$('phase-dot').classList.toggle('running',running);note.textContent=running?'Stopp hält den Versuch an dieser Stelle an.':elapsed===TOTAL?'Mit Start kannst du den Versuch erneut ansehen.':elapsed>0?'Angehalten. Mit Start läuft der Versuch an dieser Stelle weiter.':'Mit Start beginnt die Animation. Stopp hält das Bild an.';}
+ function tick(now){if(!running)return;elapsed=Math.min(TOTAL,elapsed+Math.max(0,now-last)/1000);last=now;draw(elapsed);if(elapsed>=TOTAL){running=false;raf=0;sync();return;}raf=requestAnimationFrame(tick);}
+ function pause(){if(!running)return;running=false;cancelAnimationFrame(raf);raf=0;sync();}
+ start.addEventListener('click',()=>{if(running)return;if(elapsed>=TOTAL)elapsed=0;running=true;last=performance.now();draw(elapsed);sync();raf=requestAnimationFrame(tick);});
+ stop.addEventListener('click',pause);document.addEventListener('visibilitychange',()=>{if(document.hidden)pause();});
+ draw(0);sync();
+})();
+</script>
+</body></html>
